@@ -19,6 +19,7 @@ body {
 div.tile.is-ancestor {
   display:flex;
   justify-content: center;
+  gap: 1em;
 }
 
 body {
@@ -43,9 +44,160 @@ body {
     background-position: center center;
     filter: brightness(60%);
 }
-.hero-content {
-    position: relative;
+
+.text-box {
+  margin-top: 40px;
+  margin-width: 600px;
 }
-.hero2 {
-  color: #f5f5f5; 
+
+.text-box1 h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  padding-left:50px;
+  padding-top: 60px;
+  text-decoration: underline;
+}
+
+.text-box2 h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  position: center;
+  padding-top: 60px;
+  text-decoration: none;
+}
+
+.text-box3 h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  padding-left:50px;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* slideshow  */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+  order: 1;
+  transition: .3s ease;
+  position: center;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: black;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.Bookinfo{
+  position: top;
+  text-align: right;
+  color: black;
+  font-size: 16px;
+  padding: 10px 14px;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: center;
+}
+
+.ContainerText{
+  position: left;
+
+}
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+.leftarrow {
+  float:left;
+  transform: scaleX(-1);
+}
+
+.rightarrow{
+  float:right;
 }

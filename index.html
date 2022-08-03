@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,15 +15,12 @@
 
   <body>
 <!-- Nav bar with banner -->
-<section class="hero is-primary is-medium">
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
     <!-- Navigation bar color-->
-    <nav class="navbar" role="navigation" aria-label="main navigation"style="background-color:#fecf6a">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation"style="background-color:#fecf6a">
       <!-- Book Logo -->
       <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3163-thumb.png" width="50" height="50">
+    <a class="navbar-item" href="index.html">
+      <img src="https://cdn.discordapp.com/attachments/444304824142397441/1003721700753555496/mazelogoof.png" >
     </a>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -32,123 +28,502 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href=index.html>
-        Home
-      </a>
-
-      <a class="navbar-item" href=test.html>
-        Top books
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="test.html">
-          More 
+  <div class ="container">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" style = "padding:20px" id ="Home-button">
+          Home
         </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
+  
+<!--         <a class="navbar-item" style = "padding:20px" id ="spot-light-button">
+          Top Books
+        </a> -->
+        <a class="navbar-item" style = "padding:20px" id ="Bar-button">
+          Genres
+        </a>
+        <a class="navbar-item" style = "padding:20px" href=locations.html>
+          Locations
+        </a>
       </div>
     </div>
-<!-- right end of nav bar -->
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" href="Login.html">
-            <strong>Log In</strong>
-          </a>
-          <a class="button is-light">
-            Cart
-          </a>
-        </div>
+<!-- right end of nav bar with search bar -->
+      <div class="navbar-end">
+        <div class="navbar-item">
+        <input class="input is-rounded" type="text" placeholder="Search book...">
       </div>
     </div>
-  </div>
 </nav>
 
-  <!-- Hero content: will be in the middle -->
+<div class="leftarrow">
+  <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png"width="40" height="60">
+</div>
+<!-- genre bar -->
+<div id = "bar" class = "hidden">
+<div class="text-box1">
+  <h1> Maze Library</h1>
+</div> 
+<!-- Left arrow -->
+  <div class="leftarrow">
+    <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png"width="40" height="60">
+  </div>
+
+  <!-- Genre tabs --> 
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-12">
+      <div class="tile">
+        <div class="tile is-parent">
+  <!--         <a href="Classics.html"> -->
+          <div class="tile is-child notification" style="background-color:#447fb3" id ="Classics" >
+            <p class="title">Classics</p>
+  <!--         </a> -->
+          </div>
+  <!--         <a href= Sci-fi.html> -->
+          <article class="tile is-child notification" style="background-color:#47afb3" id = "Sci-fi">
+            <p class="title">Sci-fi</p>
+  <!--         </a> -->
+          </article>
+  <!--         <a href="Romance.html"> -->
+          <article class="tile is-child notification " style="background-color:#7ebf85" id ="Romance" >
+            <p class="title">Romance</p>
+  <!--         </a> -->
+          </article>
+  <!--         <a href= Comedy.html> -->
+          <article class="tile is-child notification " style="background-color:#f5bd3b" id = "Comedy">
+            <p class="title">Comedy</p>
+  <!--         </a> -->
+          </article>
+  <!--         <a href= Horror.html> -->
+          <article class="tile is-child notification " style="background-color:#e8cf95" id = "Horror" >
+            <p class="title">Horror</p>
+  <!--         </a> -->
+          </article>
+  <!--         </a> -->
+          <!-- right arrow -->
+          <div class="rightarrow">
+          <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png" width="40" height="60">
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div> 
+</div>
+    
+<br><br>
+
+  <!-- spotlight -->
+      <div class="text-box2" id ="top-books">
+   <center> <h1> Spotlight of the Week </h1> </center>
+     <!-- Slideshow container -->
+    <div class="slideshow-container fade">
+  
+      <!-- Full images with numbers and message Info -->
+      <div class="Containers">
+        <div class="MessageInfo">1 / 3</div>
+        <center>
+        <img src="https://almabooks.com/wp-content/uploads/2020/08/9781847498571.jpg" width="300" height="300"> </center>
+    <div class="Bookinfo">
+        <h2><b>1984</b> / George Orwell</h2> 
+    </div>
+  <!--       <div class="Info"> Learn More </div> -->
+      </div>
+    <div class="ContainerText">
+      <div class="Containers">
+        <div class="MessageInfo">2 / 3</div>
+        <center>
+        <img src="https://cdn.discordapp.com/attachments/444304824142397441/1004431606393614407/alteredresized.jpg" width="300" height="300"> </center>
+        <div class="Bookinfo">
+        <h2><b>Altered Carbon</b> / Richard Morgan</h2> 
+    </div>
+  <!--       <div class="Info">Learn More <br></div> -->
+      </div>
+    
+      <div class="Containers">
+        <div class="MessageInfo">3 / 3</div>
+        <center>
+        <img src="https://cdn.discordapp.com/attachments/444304824142397441/1004430905097592973/New_Project.jpg" width="300" height="300"> </center>
+        <div class="Bookinfo">
+        <h2><b>Jane Eyre</b> / Charlotte Brontë</h2> 
+    </div>
+  <!--       <div class="Info">Learn More</div> -->
+      </div>
+    
+      <!-- Back and forward buttons -->
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The circles/dots -->
+    <div style="text-align:center">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+      <span class="dots" onclick="currentSlide(3)"></span>
+    </div> 
+  </div>
+</div>
+
+<!--   spotlight   -->
+
+<div id ="classic" class = "hidden">
+    <!-- Banner Classics -->
+          <section class="hero2 has-text-centered" style="background-color:#447fb3";">
+          <div class="hero-body">
+            <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Classics</p>
+          </div>
+        </section>
+    
+        <br> <br>
+    <!-- Book 1  -->
+        <div class="columns is-centered is-variable is-5">
+            <div class="column is-one-fifth">
+              <a href="test.html">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/51eifuNmLCL._SX330_BO1,204,203,200_.jpg" alt="Placeholder image"/>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4">Frankenstein</p>
+                  <p class="subtitle is-6">Mary Shelley</p>
+                </div>
+              </div>
+            </div>
+            </a>
+    <!-- Book 2  -->
+            <div class="column is-one-fifth">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://standardebooks.org/ebooks/william-shakespeare/hamlet/downloads/cover.jpg" alt="Placeholder image"/>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4">Hamlet</p>
+                  <p class="subtitle is-6">William Shakespeare</p>
+                </div>
+              </div>
+            </div>
+    <!-- Book 3  -->
+            <div class="column is-one-fifth">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="https://th.bing.com/th/id/R.717a64efbda4a31c7f14ec7b4f015d4e?rik=xUsRdUkOnDNKcQ&pid=ImgRaw&r=0" alt="Placeholder image"/>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-4">Pride and Prejudice</p>
+                  <p class="subtitle is-6">Jane Austen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<div id = "sci-fi" class = "hidden">
+<!-- Banner sci fi -->
+      <section class="hero2 has-text-centered" style="background-color:#47afb3";">
+      <div class="hero-body">
+        <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Sci-fi</p>
+      </div>
+    </section>
+    <br><br>
+<!-- Book 1  -->
+    
+    <div class="columns is-centered is-variable is-5">
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://almabooks.com/wp-content/uploads/2020/08/9781847498571.jpg" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">1984</p>
+              <p class="subtitle is-6">George Orwell</p>
+            </div>
+          </div>
+        </div>
+<!-- Book 2  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/OIP.FbSR34Cyo9qVU589XKQUwAHaK5?pid=ImgDet&rs=1"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Altered Carbon</p>
+              <p class="subtitle is-6">Richard K. Morgan</p>
+            </div>
+          </div>
+        </div>
+<!-- Book 3  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.224ab65f4b0bf0b1b2d780f9d5db43f9?rik=EAIPX8RG%2bUm%2fdA&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9780345452382_p0_v1_s1200x630.jpg&ehk=CNn4FRnjFN%2bwM5UI6Uo68McK5w4CdNflNVeJaKfE%2bfM%3d&risl=&pid=ImgRaw&r=0" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Ammonite</p>
+              <p class="subtitle is-6">Nicole Griffith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div id = "romance" class = "hidden">
+<!-- Banner Romance -->
+      <section class="hero2 has-text-centered" style="background-color:#7ebf85";">
+      <div class="hero-body">
+        <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Romance</p>
+      </div>
+    </section>
+    <br> <br>
+<!-- Book 1  -->
+    <div class="columns is-centered is-variable is-5">
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.7100a90f9cc2c274ea4e0f4f129c9dcf?rik=Jw4gZtBPD60N4A&pid=ImgRaw&r=0" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Eleanor and Park</p>
+              <p class="subtitle is-6">Rainbow Rowell</p>
+            </div>
+          </div>
+        </div>
+      
+<!-- Book 2  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/OIP.qD55j5tfoN9UREXiNZzK5AHaKY?pid=ImgDet&rs=1"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">To All the Boys I’ve Loved Before</p>
+              <p class="subtitle is-6">Jenny Han</p>
+            </div>
+          </div>
+        </div>
+      
+<!-- Book 3  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.2a08d9a0b7674ddaa09330434c4dcae3?rik=wwPTNrF%2fAUK95w&pid=ImgRaw&r=0" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Twilight</p>
+              <p class="subtitle is-6">Stephen Meyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div id = "comedy" class = "hidden">
+<!-- Banner Comedy-->
+      <section class="hero2 has-text-centered" style="background-color:#f5bd3b";">
+      <div class="hero-body">
+        <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Comedy</p>
+      </div>
+    </section>
+
+    <br><br>
+    
+<!-- Book 1  -->
+    <div class="columns is-centered is-variable is-5">
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://prodimage.images-bn.com/pimages/9780316777735_p0_v5_s192x300.jpg" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Naked</p>
+              <p class="subtitle is-6">David Sedaris</p>
+            </div>
+          </div>
+        </div>
+<!-- Book 2  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.293c1cfbe3f504cd8e784f8a4422bec4?rik=H372db%2bXX8iL7Q&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9780553348972_p0_v1_s1200x630.jpg&ehk=LO2w0%2bFiAYJ7fgYP%2fQ4xYUuagxXG3qy6pEMVuOJZZD0%3d&risl=&pid=ImgRaw&r=0"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Still Life with Woodpecker</p>
+              <p class="subtitle is-6">Tom Robbins</p>
+            </div>
+          </div>
+        </div>
+<!-- Book 3  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://i.thenile.io/r1000/9780316018432.jpg?r=5e4dd948c4e7c" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Our Dumb World</p>
+              <p class="subtitle is-6">The Onion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div id = "horror" class = "hidden">
+<!-- Banner Horror-->
+      <section class="hero2 has-text-centered" style="background-color:#e8cf95";">
+      <div class="hero-body">
+        <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Horror</p>
+      </div>
+    </section>
+    <br><br>
+<!-- Book 1  -->
+    <div class="columns is-centered is-variable is-5">
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.174a6d7c327ea1216685cee67a95a00d?rik=lEky%2fXY%2bm72gcg&pid=ImgRaw&r=0" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">At the Mountain of Madness</p>
+              <p class="subtitle is-6">H.P Lovecraft</p>
+            </div>
+          </div>
+        </div>
+      
+<!-- Book 2  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://th.bing.com/th/id/R.64465ef94dcf95b2465219e25fd9ad4b?rik=t0%2fotRwCVuxjLw&pid=ImgRaw&r=0"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">The Bad Seed</p>
+              <p class="subtitle is-6">William March</p>
+            </div>
+          </div>
+        </div>
+      
+<!-- Book 3  -->
+        <div class="column is-one-fifth">
+          <div class="card-image">
+            <figure class="image">
+              <img src="https://www.bibdsl.co.uk/imagegallery2/bookdata/cd467/9780141439846.JPG" alt="Placeholder image"/>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Dracula</p>
+              <p class="subtitle is-6">Bram Stoker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div id = "adventure" class = "hidden" >
+  <!-- Banner Adventure-->
+        <section class="hero2 has-text-centered" style="background-color:#789982";">
+        <div class="hero-body">
+          <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Adventure</p>
+        </div>
+      </section>
+      
+      <br><br>
+      
+  <!-- Book 1  -->
+      <div class="columns is-centered is-variable is-5">
+          <div class="column is-one-fifth">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://th.bing.com/th/id/R.0ca4159791f06744e43cbfbe4d23b02e?rik=q9xdF9%2fNuV238g&pid=ImgRaw&r=0" alt="Placeholder image"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-4">Don Quixote</p>
+                <p class="subtitle is-6">Miguel de Cervantes</p>
+              </div>
+            </div>
+          </div>
+        
+  <!-- Book 2  -->
+          <div class="column is-one-fifth">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328864746l/1086164.jpg"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-4"> Journey to the Center of the Earth</p>
+                <p class="subtitle is-6">Jules Verne</p>
+              </div>
+            </div>
+          </div>
+  <!-- Book 3  -->
+          <div class="column is-one-fifth">
+            <div class="card-image">
+              <figure class="image">
+                <img src="https://i1.wp.com/www.moviemuse.net/wp-content/uploads/2016/04/The_Jungle_Book_2016_Poster.jpg" alt="Placeholder image"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-4">The Jungle Book</p>
+                <p class="subtitle is-6">Rudyard Kipling
+  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<br> <br>
+<section class="hero is-success is-halfheight">
   <div class="hero-body">
-    <div class="container has-text-centered">
+    <div class="">
       <p class="title">
-        Maze Bookshop
+        Half height hero
       </p>
       <p class="subtitle">
-        A place to get lost with books
+        Half height subtitle
       </p>
     </div>
   </div>
 </section>
-<!-- Space betwen hero and the grids-->
-    <br><br>
-
-<!-- Grid of Buttons --> 
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-8">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <a href="Classics.html">
-        <article class="tile is-child notification" style="background-color:#E3C3CE">
-          <p class="title">Classics</p>
-        </a>
-        </article>
-        <a href= Sci-fi.html>
-        <article class="tile is-child notification" style="background-color:#D6BFDD">
-          <p class="title">Sci-fi</p>
-        </a>
-        </article>
-      </div>
-      <div class="tile is-parent is-vertical">
-        <a href="Romance.html">
-        <article class="tile is-child notification " style="background-color:#EFCCB1">
-          <p class="title">Romance</p>
-        </a>
-        </article>
-        <a href= Comedy.html>
-        <article class="tile is-child notification " style="background-color:#ECA673">
-          <p class="title">Comedy</p>
-        </a>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-vertical">
-        <a href= Horror.html>
-        <article class="tile is-child notification " style="background-color:#B59E8B">
-          <p class="title">Horror</p>
-        </a>
-        </article>
-        <a href=Adventure.html>
-        <article class="tile is-child notification " style="background-color:#789982">
-          <p class="title">Adventure</p>
-        </a>
-        </article>
-      </div>
-    </div>
-  </div>        
-</div> 
-<br><br>
-
-
+    
+  <!--   <script src="script.js" defer=></script>
+  <script type="text/javascript" src="slide.js"></script> -->
   </body>
+  
 <!-- Footer end note -->
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      <strong>Maze Bookshop</strong> by Karen Li & Suramya Shakya. The source code is licensed
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
       is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
     </p>
   </div>
 </footer>
+<script src="script.js" defer=></script>
+<script type="text/javascript" src="slide.js"></script>
 </html>
