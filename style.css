@@ -38,11 +38,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://img-new.cgtrader.com/items/2668865/a3b9eb75a2/ancient-books-3d-model-low-poly-obj-fbx-blend.jpg);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    filter: brightness(60%);
 }
 
 .text-box {
@@ -55,15 +55,19 @@ body {
   margin-bottom: 40px;
   padding-left:50px;
   padding-top: 60px;
-  text-decoration: underline;
+  text-decoration: none;
+  font-family: Spectral, serif;
 }
-
+.title{
+  margin-left: 25px;
+}
 .text-box2 h1 {
   font-size: 45px;
   margin-bottom: 40px;
   position: center;
   padding-top: 60px;
   text-decoration: none;
+  font-family: Spectral, serif;
 }
 
 .text-box3 h1 {
@@ -196,8 +200,41 @@ body {
 .leftarrow {
   float:left;
   transform: scaleX(-1);
+  margin-top: 13px;
 }
 
 .rightarrow{
   float:right;
+  margin-top: 13px;
+}
+
+.mapouter {
+  left:800px;
+  bottom: 650px;
+}
+
+#location1 {
+  width:500px;
+  height:200px;
+}
+
+#location2 {
+  width:500px;
+  height:200px;
+}
+#location3 {
+  width:500px;
+  height:200px;
+}
+#location4 {
+  width:500px;
+  height:200px;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: 300px;
+  grid-row-gap:20px;
+  padding-left:50px;
+  
 }
