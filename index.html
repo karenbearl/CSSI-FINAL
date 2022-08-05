@@ -34,10 +34,6 @@
         <a class="navbar-item" style = "padding:20px" id ="Home-button">
           Home
         </a>
-  
-<!--         <a class="navbar-item" style = "padding:20px" id ="spot-light-button">
-          Top Books
-        </a> -->
         <a class="navbar-item" style = "padding:20px" id ="Bar-button">
           Genres
         </a>
@@ -49,69 +45,100 @@
 <!-- right end of nav bar with search bar -->
       <div class="navbar-end">
         <div class="navbar-item">
-        <input class="input is-rounded" type="text" placeholder="Search book...">
+        <input 
+          id="search"
+          class="input is-rounded" 
+          type="text" 
+          placeholder="Search book..."
+          data-search>
       </div>
     </div>
-</nav>
+  </nav>
 
-<div class="leftarrow">
-  <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png"width="40" height="60">
-</div>
+
 <!-- genre bar -->
 <div id = "bar" class = "hidden">
 <div class="text-box1">
   <center><h1> <br>| Maze Library |</h1></center>
 </div> 
-<!-- Left arrow -->
-  <div class="leftarrow">
-    <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png"width="40" height="60">
-  </div>
 
-  <!-- Genre tabs --> 
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-12">
-      <div class="tile">
-        <div class="tile is-parent">
-  <!--         <a href="Classics.html"> -->
-          <div class="tile is-child notification" style="background-color:#447fb3" id ="Classics" >
-            <p class="title">Classics</p>
-  <!--         </a> -->
-          </div>
-  <!--         <a href= Sci-fi.html> -->
-          <article class="tile is-child notification" style="background-color:#47afb3" id = "Sci-fi">
-            <p class="title">Sci-fi</p>
-  <!--         </a> -->
-          </article>
-  <!--         <a href="Romance.html"> -->
-          <article class="tile is-child notification " style="background-color:#7ebf85" id ="Romance" >
-            <p class="title">Romance</p>
-  <!--         </a> -->
-          </article>
-  <!--         <a href= Comedy.html> -->
-          <article class="tile is-child notification " style="background-color:#f5bd3b" id = "Comedy">
-            <p class="title">Comedy</p>
-  <!--         </a> -->
-          </article>
-  <!--         <a href= Horror.html> -->
-          <article class="tile is-child notification " style="background-color:#e8cf95" id = "Horror" >
-            <p class="title">Horror</p>
-  <!--         </a> -->
-          </article>
-  <!--         </a> -->
-          
-          
-          <!-- right arrow -->
-          <div class="rightarrow">
-          <img src="https://cdn-icons-png.flaticon.com/512/2316/2316674.png" width="40" height="60">
+<!-- genre carasousel tabs -->
+  <div id="wrapper">
+        <div id="carousel">
+          <div id="content">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-16">
+                <div class="tile">
+                  <div class="tile is-parent">
+    <!--         <a href="Classics.html"> -->
+            <div class="tile is-child notification" style="background-color:#447fb3" id ="Classics" >
+              <p class="title">Classics</p>
+    <!--         </a> -->
+            </div>
+    <!--         <a href= Sci-fi.html> -->
+            <article class="tile is-child notification gap" style="background-color:#47afb3" id = "Sci-fi">
+              <p class="title">Sci-fi</p>
+    <!--         </a> -->
+            </article>
+    <!--         <a href="Romance.html"> -->
+            <article class="tile is-child notification " style="background-color:#7ebf85" id ="Romance" >
+              <p class="title">Romance</p>
+    <!--         </a> -->
+            </article>
+    <!--         <a href= Comedy.html> -->
+            <article class="tile is-child notification " style="background-color:#f5bd3b" id = "Comedy">
+              <p class="title">Comedy</p>
+    <!--         </a> -->
+            </article>
+    <!--         <a href= Horror.html> -->
+            <article class="tile is-child notification " style="background-color:#e8cf95" id = "Horror" >
+              <p class="title">Horror</p>
+    <!--         </a> -->
+            </article>
+    <!--         </a> -->
+            <article class="tile is-child notification " style="background-color:#873e23" id = "Adventure" >
+              <p class="title">Adventure</p>
+    <!--         </a> -->
+            </article>
           </div>
         </div>
-      </div>
-    </div>        
-  </div> 
-</div>
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
+          </div>
+          </div>
+        </div>
+      </div>        
+    </div> 
+  </div>
     
 <br><br>
 
+<!-- search items -->
+<section id="search-result" class = "hidden">
+  <center> <h1> Search result </h1> </center>
+  <div id="book-container">
+  </div>
+</section>
   <!-- spotlight -->
       <div class="text-box2" id ="top-books">
    <center> <h1> Spotlight of the Week </h1> </center>
@@ -177,7 +204,7 @@
         <br> <br>
     <!-- Book 1  -->
         <div class="columns is-centered is-variable is-5">
-            <div class="column is-one-fifth">
+            <div class="column is-one-fifth" id="classicbook1">
               <a href="test.html">
               <div class="card-image">
                 <figure class="image">
@@ -186,8 +213,10 @@
               </div>
               <div class="card-content">
                 <div class="content">
+                  <center>
                   <p class="title is-4">Frankenstein</p>
                   <p class="subtitle is-6">Mary Shelley</p>
+                  </center>
                 </div>
               </div>
             </div>
@@ -443,7 +472,7 @@
     </div>
 <div id = "adventure" class = "hidden" >
   <!-- Banner Adventure-->
-        <section class="hero2 has-text-centered" style="background-color:#789982";">
+        <section class="hero2 has-text-centered" style="background-color:#873e23";">
         <div class="hero-body">
           <p class="title is-size-1" style="text-shadow: 1px 2px #2b7cd6;">Adventure</p>
         </div>
@@ -498,7 +527,7 @@
           </div>
         </div>
       </div>
-<br> <br>
+
 <section class="hero is-halfheight">
   <div class="hero-body">
     <div class="">
@@ -511,19 +540,20 @@
     </div>
   </div>
 </section>
-    
-  </body>
+
+</body>
   
 <!-- Footer end note -->
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-    </p>
-  </div>
-</footer>
-<script src="script.js" defer=></script>
-<script type="text/javascript" src="slide.js"></script>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js" defer=></script>
+  <script type="text/javascript" src="slide.js"></script>
+  <script src="search.js" defer></script>
 </html>
